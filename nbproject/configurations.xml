@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="fossa" displayName="fossa" projectFiles="true">
+        <itemPath>header/fossa/fossa.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="IoTException"
+                     displayName="IoTException"
+                     projectFiles="true">
+        <itemPath>header/IoTException/IoTException.h</itemPath>
+        <itemPath>header/IoTException/IoTFileException.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="IoTLogger" displayName="IoTLogger" projectFiles="true">
+        <itemPath>header/IoTLogger/IoTConsoleLogger.h</itemPath>
+        <itemPath>header/IoTLogger/IoTFileLogger.h</itemPath>
+        <itemPath>header/IoTLogger/IoTLogger.h</itemPath>
+        <itemPath>header/IoTLogger/IoTLoggerBuilder.h</itemPath>
+      </logicalFolder>
+      <itemPath>header/IoTApplication.h</itemPath>
+      <itemPath>header/IoTFile.h</itemPath>
+      <itemPath>header/IoTFileText.h</itemPath>
+      <itemPath>header/IoTPtr.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="fossa" displayName="fossa" projectFiles="true">
+        <itemPath>src/fossa/fossa.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="IoTException"
+                     displayName="IoTException"
+                     projectFiles="true">
+        <itemPath>src/IoTException/IoTException.cpp</itemPath>
+        <itemPath>src/IoTException/IoTFileException.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="IoTLogger" displayName="IoTLogger" projectFiles="true">
+        <itemPath>src/IoTLogger/IoTConsoleLogger.cpp</itemPath>
+        <itemPath>src/IoTLogger/IoTFileLogger.cpp</itemPath>
+        <itemPath>src/IoTLogger/IoTLogger.cpp</itemPath>
+        <itemPath>src/IoTLogger/IoTLoggerBuilder.cpp</itemPath>
+      </logicalFolder>
+      <itemPath>src/IoTApplication.cpp</itemPath>
+      <itemPath>src/IoTFile.cpp</itemPath>
+      <itemPath>src/IoTFileText.cpp</itemPath>
+      <itemPath>src/IoTPtr.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+    <Elem>header/log4cpp</Elem>
+    <Elem>header/IoTException</Elem>
+    <Elem>header/IoTLogger</Elem>
+    <Elem>header/fossa</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>true</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>../libodb-mysql-2.4.0/odb</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>lib</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibLibItem>cutl</linkerLibLibItem>
+            <linkerLibLibItem>odb</linkerLibLibItem>
+            <linkerLibLibItem>odb-mysql</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="header/IoTApplication.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/IoTException/IoTException.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/IoTException/IoTFileException.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="header/IoTFile.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/IoTFileText.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/IoTLogger/IoTConsoleLogger.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="header/IoTLogger/IoTFileLogger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/IoTLogger/IoTLogger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/IoTLogger/IoTLoggerBuilder.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="header/IoTPtr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/fossa/fossa.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/IoTApplication.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/IoTException/IoTException.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/IoTException/IoTFileException.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/IoTFile.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/IoTFileText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/IoTLogger/IoTConsoleLogger.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/IoTLogger/IoTFileLogger.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/IoTLogger/IoTLogger.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/IoTLogger/IoTLoggerBuilder.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/IoTPtr.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/fossa/fossa.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibLibItem>litesql</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="header/IoTApplication.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/IoTException/IoTException.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/IoTException/IoTFileException.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="header/IoTFile.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/IoTFileText.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/IoTLogger/IoTConsoleLogger.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="header/IoTLogger/IoTFileLogger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/IoTLogger/IoTLogger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/IoTLogger/IoTLoggerBuilder.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="header/IoTPtr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/fossa/fossa.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/IoTApplication.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/IoTException/IoTException.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/IoTException/IoTFileException.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/IoTFile.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/IoTFileText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/IoTLogger/IoTConsoleLogger.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/IoTLogger/IoTFileLogger.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/IoTLogger/IoTLogger.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/IoTLogger/IoTLoggerBuilder.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/IoTPtr.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/fossa/fossa.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
