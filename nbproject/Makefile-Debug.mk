@@ -21,7 +21,7 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=GNU-Linux-x86
+CND_PLATFORM=GNU-Linux
 CND_DLIB_EXT=so
 CND_CONF=Debug
 CND_DISTDIR=dist
@@ -46,7 +46,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/src/IoTLogger/IoTLogger.o \
 	${OBJECTDIR}/src/IoTLogger/IoTLoggerBuilder.o \
 	${OBJECTDIR}/src/IoTPtr.o \
-	${OBJECTDIR}/src/fossa/fossa.o
+	${OBJECTDIR}/src/fossa/fossa.o \
+	${OBJECTDIR}/src/model/IoTDatabase.o
 
 
 # C Compiler Flags
@@ -132,6 +133,11 @@ ${OBJECTDIR}/src/fossa/fossa.o: nbproject/Makefile-${CND_CONF}.mk src/fossa/foss
 	${MKDIR} -p ${OBJECTDIR}/src/fossa
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/fossa/fossa.o src/fossa/fossa.c
+
+${OBJECTDIR}/src/model/IoTDatabase.o: nbproject/Makefile-${CND_CONF}.mk src/model/IoTDatabase.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/model
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -I../libodb-mysql-2.4.0/odb -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/model/IoTDatabase.o src/model/IoTDatabase.cpp
 
 # Subprojects
 .build-subprojects:

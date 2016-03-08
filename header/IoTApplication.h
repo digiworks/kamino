@@ -9,7 +9,10 @@
 #define	IOTAPPLICATION_H
 
 #include "../header/IoTLogger/IoTLogger.h"
+#include "../header/model/IoTDatabase.h"
+
 using namespace IoT::Logging;
+using namespace IoT::Model::Engine;
 
 namespace IoT{
     class IoTApplication {
@@ -23,6 +26,7 @@ namespace IoT{
         static IoTApplication* app;
         
         IoTLogger * logger;
+        IoTDatabase * database;
     };
 }
 #endif	/* IOTAPPLICATION_H */

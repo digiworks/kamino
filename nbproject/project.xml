@@ -15,6 +15,7 @@
                 <sourceRootElem>header/IoTException</sourceRootElem>
                 <sourceRootElem>header/IoTLogger</sourceRootElem>
                 <sourceRootElem>header/fossa</sourceRootElem>
+                <sourceRootElem>header/model</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

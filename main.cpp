@@ -11,25 +11,16 @@
 
 #include "header/IoTApplication.h"
 
-
-#include <odb/database.hxx>
-#include <odb/transaction.hxx>
-
-#include <odb/mysql/database.hxx>
-
 using namespace std;
 using namespace IoT;
-
-
-using namespace odb::core;
 
 /*
  * 
  */
 int main(int argc, char** argv) {
 
-    auto_ptr<database> db (new odb::mysql::database (argc, argv));
-     
+    //auto_ptr<database> db (new odb::mysql::database ("kamino", "kamino","kamino"));
+    
     IoTApplication *app = new IoTApplication();
     
     IoTApplication::getApp()->getLogger()->info("----------------\n");

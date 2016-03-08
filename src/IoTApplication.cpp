@@ -11,8 +11,12 @@
 
 #include "../header/IoTApplication.h"
 #include "../header/IoTLogger/IoTLoggerBuilder.h"
+#include "../header/model/IoTDatabase.h"
+
+
 using namespace IoT;
 using namespace IoT::Logging;
+using namespace IoT::Model::Engine;
 using namespace std;
 
 IoTApplication * IoTApplication::app = 0x00;
@@ -22,14 +26,17 @@ IoTApplication::IoTApplication() {
     IoTLoggerBuilder * builder = new IoTLoggerBuilder();
     this->logger = builder->getLogger();
     delete builder;
+    
+    this->database = new IoTDatabase();
 }
 
 IoTApplication::~IoTApplication() {
     try {
         if (this->logger) {
             delete this->logger;
+            delete this->database;
         }
-    } catch (exception *ex) {
+    } catch (std::exception *ex) {
         printf(ex->what());
     }
 }

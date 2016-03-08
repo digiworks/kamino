@@ -30,7 +30,7 @@ IoTFileText::~IoTFileText() {
 void IoTFileText::open(){
     try{
         
-    }catch(exception *ex){
+    }catch(std::exception *ex){
         IoTApplication::getApp()->getLogger()->error(ex->what());
         throw  IoTFileException() ;
     }
@@ -42,7 +42,7 @@ void IoTFileText::open(){
 void IoTFileText::close(){
     try{
         
-    }catch(exception *ex){
+    }catch(std::exception *ex){
         IoTApplication::getApp()->getLogger()->error(ex->what());
         throw IoTFileException();
     }

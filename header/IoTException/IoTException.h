@@ -12,7 +12,7 @@ using namespace std;
 
 
 namespace IoT{namespace IoTException{
-    class IoTException : public exception {
+    class IoTException : public std::exception {
     public:
         IoTException() ;
         virtual ~IoTException() throw();
