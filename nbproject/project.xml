@@ -16,6 +16,7 @@
                 <sourceRootElem>header/IoTLogger</sourceRootElem>
                 <sourceRootElem>header/fossa</sourceRootElem>
                 <sourceRootElem>header/model</sourceRootElem>
+                <sourceRootElem>header/mongoose</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

@@ -18,8 +18,6 @@ using namespace IoT;
  * 
  */
 int main(int argc, char** argv) {
-
-    //auto_ptr<database> db (new odb::mysql::database ("kamino", "kamino","kamino"));
     
     IoTApplication *app = new IoTApplication();
     

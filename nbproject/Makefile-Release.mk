@@ -46,8 +46,9 @@ OBJECTFILES= \
 	${OBJECTDIR}/src/IoTLogger/IoTLogger.o \
 	${OBJECTDIR}/src/IoTLogger/IoTLoggerBuilder.o \
 	${OBJECTDIR}/src/IoTPtr.o \
-	${OBJECTDIR}/src/fossa/fossa.o \
-	${OBJECTDIR}/src/model/IoTDatabase.o
+	${OBJECTDIR}/src/model/IoTDatabase.o \
+	${OBJECTDIR}/src/mongoose/IoTTcpServer.o \
+	${OBJECTDIR}/src/mongoose/mongoose.o
 
 
 # C Compiler Flags
@@ -129,15 +130,20 @@ ${OBJECTDIR}/src/IoTPtr.o: src/IoTPtr.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/IoTPtr.o src/IoTPtr.cpp
 
-${OBJECTDIR}/src/fossa/fossa.o: src/fossa/fossa.c 
-	${MKDIR} -p ${OBJECTDIR}/src/fossa
-	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/fossa/fossa.o src/fossa/fossa.c
-
 ${OBJECTDIR}/src/model/IoTDatabase.o: src/model/IoTDatabase.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src/model
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/model/IoTDatabase.o src/model/IoTDatabase.cpp
+
+${OBJECTDIR}/src/mongoose/IoTTcpServer.o: src/mongoose/IoTTcpServer.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src/mongoose
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/mongoose/IoTTcpServer.o src/mongoose/IoTTcpServer.cpp
+
+${OBJECTDIR}/src/mongoose/mongoose.o: src/mongoose/mongoose.c 
+	${MKDIR} -p ${OBJECTDIR}/src/mongoose
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/mongoose/mongoose.o src/mongoose/mongoose.c
 
 # Subprojects
 .build-subprojects:

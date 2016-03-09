@@ -4,9 +4,6 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <logicalFolder name="fossa" displayName="fossa" projectFiles="true">
-        <itemPath>header/fossa/fossa.h</itemPath>
-      </logicalFolder>
       <logicalFolder name="IoTException"
                      displayName="IoTException"
                      projectFiles="true">
@@ -22,6 +19,10 @@
       <logicalFolder name="model" displayName="model" projectFiles="true">
         <itemPath>header/model/IoTDatabase.h</itemPath>
       </logicalFolder>
+      <logicalFolder name="mongoose" displayName="mongoose" projectFiles="true">
+        <itemPath>header/mongoose/IoTTcpServer.h</itemPath>
+        <itemPath>header/mongoose/mongoose.h</itemPath>
+      </logicalFolder>
       <itemPath>header/IoTApplication.h</itemPath>
       <itemPath>header/IoTFile.h</itemPath>
       <itemPath>header/IoTFileText.h</itemPath>
@@ -34,9 +35,6 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <logicalFolder name="fossa" displayName="fossa" projectFiles="true">
-        <itemPath>src/fossa/fossa.c</itemPath>
-      </logicalFolder>
       <logicalFolder name="IoTException"
                      displayName="IoTException"
                      projectFiles="true">
@@ -51,6 +49,10 @@
       </logicalFolder>
       <logicalFolder name="model" displayName="model" projectFiles="true">
         <itemPath>src/model/IoTDatabase.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="mongoose" displayName="mongoose" projectFiles="true">
+        <itemPath>src/mongoose/IoTTcpServer.cpp</itemPath>
+        <itemPath>src/mongoose/mongoose.c</itemPath>
       </logicalFolder>
       <itemPath>src/IoTApplication.cpp</itemPath>
       <itemPath>src/IoTFile.cpp</itemPath>
@@ -77,6 +79,7 @@
     <Elem>header/IoTLogger</Elem>
     <Elem>header/fossa</Elem>
     <Elem>header/model</Elem>
+    <Elem>header/mongoose</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -132,9 +135,11 @@
       </item>
       <item path="header/IoTPtr.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="header/fossa/fossa.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="header/model/IoTDatabase.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/mongoose/IoTTcpServer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/mongoose/mongoose.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -161,9 +166,11 @@
       </item>
       <item path="src/IoTPtr.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/fossa/fossa.c" ex="false" tool="0" flavor2="0">
-      </item>
       <item path="src/model/IoTDatabase.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/mongoose/IoTTcpServer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/mongoose/mongoose.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -220,9 +227,11 @@
       </item>
       <item path="header/IoTPtr.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="header/fossa/fossa.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="header/model/IoTDatabase.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/mongoose/IoTTcpServer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/mongoose/mongoose.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -249,9 +258,11 @@
       </item>
       <item path="src/IoTPtr.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/fossa/fossa.c" ex="false" tool="0" flavor2="0">
-      </item>
       <item path="src/model/IoTDatabase.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/mongoose/IoTTcpServer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/mongoose/mongoose.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>
