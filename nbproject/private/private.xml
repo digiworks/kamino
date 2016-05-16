@@ -8,13 +8,16 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/iot/NetBeansProjects/kamino/header/IoTException/IoTFileException.h</file>
-            <file>file:/home/iot/NetBeansProjects/kamino/header/model/IoTDatabase.h</file>
+            <file>file:/home/iot/NetBeansProjects/kamino/src/IoTFile.cpp</file>
+            <file>file:/home/iot/NetBeansProjects/kamino/src/IoTException/IoTException.cpp</file>
             <file>file:/home/iot/NetBeansProjects/kamino/main.cpp</file>
             <file>file:/home/iot/NetBeansProjects/kamino/header/IoTException/IoTException.h</file>
             <file>file:/home/iot/NetBeansProjects/kamino/src/IoTFileText.cpp</file>
             <file>file:/home/iot/NetBeansProjects/kamino/src/IoTApplication.cpp</file>
-            <file>file:/home/iot/NetBeansProjects/kamino/src/model/IoTDatabase.cpp</file>
+            <file>file:/home/iot/NetBeansProjects/kamino/src/mongoose/IoTTcpServer.cpp</file>
+            <file>file:/home/iot/NetBeansProjects/kamino/header/mongoose/IoTTcpServer.h</file>
             <file>file:/home/iot/NetBeansProjects/kamino/header/IoTApplication.h</file>
+            <file>file:/home/iot/NetBeansProjects/kamino/src/IoTException/IoTFileException.cpp</file>
         </group>
     </open-files>
 </project-private>

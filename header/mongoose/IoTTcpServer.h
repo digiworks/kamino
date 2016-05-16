@@ -16,6 +16,7 @@
 
 #include "mongoose.h"
 
+
 namespace IoT {
     namespace Network {
         namespace Tcp {
@@ -24,9 +25,16 @@ namespace IoT {
             public:
                 IoTTcpServer();
                 virtual ~IoTTcpServer();
+                static void ev_handler(struct mg_connection *nc, int ev, void *ev_data) ;
+                virtual void open();
+                virtual void close();
             private:
-                struct mg_mgr *mgr;
-                struct mg_connection *nc;
+                struct mg_mgr mgr;
+                struct mg_connection *nc = NULL;
+                struct mg_serve_http_opts s_http_server_opts;
+                
+                bool isOpen ;
+                bool isRunning;
             };
         }
     }

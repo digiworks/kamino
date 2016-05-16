@@ -8,6 +8,7 @@
 #include <cstdlib>
 #include <cstdio>
 #include <memory>
+#include <thread>
 
 #include "header/IoTApplication.h"
 

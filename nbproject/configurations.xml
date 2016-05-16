@@ -91,6 +91,7 @@
       </toolsSet>
       <compileType>
         <ccTool>
+          <standard>8</standard>
           <incDir>
             <pElem>../libodb-mysql-2.4.0/odb</pElem>
           </incDir>
